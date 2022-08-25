@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2018",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["es2018", "esnext.asynciterable"],
+    "paths": {
+      // modules
+      "@hom-module/app": ["src/modules/app/index.module"],
+      "@hom-module/db": ["src/modules/database/index.module"],
+      "@hom-module/global": ["src/modules/global/index.module"],
+      "@hom-module/jobs": ["src/modules/jobs/index.module"],
+      "@hom-module/integrations": ["src/modules/integrations/index.module"],
+      // posts
+      "@hom-module/posts": ["src/modules/posts/index.module"],
+      "@hom-module/posts-controller": ["src/modules/posts/index.controller"],
+      "@hom-module/posts-service": ["src/modules/posts/index.service"],
+      // reviews
+      "@hom-module/reviews": ["src/modules/reviews/index.module"],
+      "@hom-module/reviews-controller": ["src/modules/reviews/index.controller"],
+      "@hom-module/reviews-service": ["src/modules/reviews/index.service"],
+      // settings
+      "@hom-module/settings": ["src/modules/settings/index.module"],
+      "@hom-module/settings-service": ["src/modules/settings/index.service"],
+      // inventory
+      "@hom-module/inventory": ["src/modules/inventory/index.module"],
+      "@hom-module/inventory-controller": ["src/modules/inventory/index.controller"],
+      "@hom-module/inventory-service": ["src/modules/inventory/index.service"],
+      "@hom-module/inventory-enums": ["src/modules/inventory/enums/index"],
+      // category
+      "@hom-module/category": ["src/modules/category/index.module"],
+      "@hom-module/category-service": ["src/modules/category/index.service"],
+      // order & delivery
+      "@hom-module/order/delivery-controller": ["src/modules/order/delivery/index.controller"],
+      "@hom-module/order/delivery-service": ["src/modules/order/delivery/index.service"],
+      "@hom-module/order": ["src/modules/order/index.module"],
+      // graphql
+      "@hom-graphql/models": ["src/graphql/models/index"],
+      "@hom-graphql/resolvers":  ["src/graphql/resolvers/index"],
+      // types
+      "@hom-module/auth/types": ["src/modules/auth/types/index"],
+      // auth
+      "@hom-module/auth": ["src/modules/auth/index.module"],
+      "@hom-module/auth-service": ["src/modules/auth/index.service"],
+      "@hom-module/auth/guard": ["src/modules/auth/guards/index.guard"],
+      "@hom-module/auth/utils": ["src/modules/auth/utils/index"],
+      "@hom-module/auth/responses": ["src/graphql/responses/index"],
+      // services
+      "@hom-module/integrations/doordash": ["src/modules/integrations/services/doordash/index.service"],
+      "@hom-module/utils": ["src/utils/index"]
+    }
+  },
+  "exclude": ["scripts", "dist-scripts"]
+}

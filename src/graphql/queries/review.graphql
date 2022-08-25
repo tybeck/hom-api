@@ -1,0 +1,7 @@
+query Review {
+    getReviews {
+        _id,
+        createdAt,
+        review
+    }
+}

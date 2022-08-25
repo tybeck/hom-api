@@ -1,0 +1,7 @@
+query Category {
+    getCategories {
+        _id,
+        name,
+        color
+    }
+}

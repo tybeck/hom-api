@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "sourceRoot": "scripts",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2018",
+    "sourceMap": true,
+    "outDir": "./dist-scripts",
+    "baseUrl": "./",
+    "incremental": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["es2018", "esnext.asynciterable"]
+  },
+  "include": ["scripts"]
+}

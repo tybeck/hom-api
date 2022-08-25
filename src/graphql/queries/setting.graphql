@@ -1,0 +1,7 @@
+query Setting {
+    getSettings {
+        _id,
+        key,
+        value
+    }
+}

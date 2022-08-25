@@ -1,0 +1,7 @@
+query Post {
+    getPosts {
+        _id,
+        createdAt,
+        message
+    }
+}

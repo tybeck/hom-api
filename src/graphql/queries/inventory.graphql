@@ -1,0 +1,6 @@
+query Inventory {
+    getInventory {
+        _id,
+        name
+    }
+}
